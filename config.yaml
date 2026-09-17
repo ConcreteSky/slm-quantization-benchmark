@@ -1,0 +1,19 @@
+models:
+  - id: microsoft/Phi-3-mini-4k-instruct
+    revision: main
+  - id: google/gemma-2-2b
+    revision: main
+precisions: [fp16, int8, nf4]
+datasets: [ag_news]
+batch_sizes: [1, 4]
+split: test
+sample_limit: 256
+seed: 42
+max_length: 512
+max_new_tokens: 32
+warmup_batches: 2
+repeats: 3
+device: 0
+output_dir: results
+mlflow_tracking_uri: sqlite:///mlflow.db
+mlflow_experiment: slm-quantization-benchmark

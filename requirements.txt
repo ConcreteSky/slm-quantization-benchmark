@@ -1,0 +1,13 @@
+torch==2.8.0
+transformers==4.56.2
+bitsandbytes==0.47.0
+accelerate==1.10.1
+datasets==4.1.1
+pynvml==12.0.0
+scikit-learn==1.7.2
+pandas==2.3.2
+seaborn==0.13.2
+matplotlib==3.10.6
+mlflow==3.3.2
+streamlit==1.49.1
+pyyaml==6.0.2
